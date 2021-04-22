@@ -19,6 +19,12 @@ body {
 
 /* || UTILITIES */
 
+.container {
+  max-width: 1350px;
+  margin: 0px auto;
+  justify-content: space-between;
+}
+
 .flex {
   display: flex;
   justify-content: center;
@@ -37,14 +43,8 @@ html {
 
 /* || SITEWIDE */
 
-.navbar {
+.menu {
   padding: 4rem 0;
-}
-
-.container {
-  max-width: 1350px;
-  margin: 0px auto;
-  justify-content: space-between;
 }
 
 .mainNavigation {
@@ -59,30 +59,30 @@ html {
   content: "✨";
 }
 
-.navbar a {
+.menu a {
   font-size: 1.5rem;
   color: hsla(210, 17%, 55%, 1);
   text-decoration: none;
   margin: 0 2rem;
 }
 
-.navbar a:link {
+.menu a:link {
 
 }
 
-.navbar a:visited {
+.menu a:visited {
 
 }
 
-.navbar a:focus {
+.menu a:focus {
 
 }
 
-.navbar a:hover {
+.menu a:hover {
   color: white;
 }
 
-.navbar a:active {
+.menu a:active {
 
 }
 
