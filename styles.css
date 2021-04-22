@@ -1,4 +1,6 @@
-/* || GENERAL STYLES */
+/* ========================================================
+|| GENERAL STYLES
+=========================================================== */
 
 html {
   font-size: 62.5%;
@@ -17,56 +19,58 @@ body {
   background-color: black;
 }
 
-/* || UTILITIES */
+/* ========================================================
+|| UTILITIES
+=========================================================== */
 
 .container {
   max-width: 1350px;
   margin: 0px auto;
-  justify-content: space-between;
 }
 
 .flex {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .debugging {
   border: 1px solid red;
 }
 
-/* || TYPOGRAPHY */
+/* ========================================================
+|| TYPOGRAPHY
+=========================================================== */
 
 html {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+/* ========================================================
+|| SITEWIDE
+=========================================================== */
 
-/* || SITEWIDE */
-
+/*
+ * Navigation Menu
+ */
 .menu {
   padding: 4rem 0;
 }
 
-.mainNavigation {
-  align-items: center;
-}
-
-.menu-item a:nth-child(6) {
-  color: linear-gradient(15deg ,#ffb291,#da7bf6);
-}
-
-.menu-item a:nth-child(6)::after {
-  content: "✨";
-}
-
 .menu a {
+  margin: 0 2rem;
   font-size: 1.5rem;
   color: hsla(210, 17%, 55%, 1);
   text-decoration: none;
-  margin: 0 2rem;
 }
 
-.menu a:link {
+/*
+ * Don't use empty rulesets as linters will often complain about this and show
+ * errors. Reason for this is it can have a slight effect on performance and
+ * is not to standards.
+ * Source:
+ * https://stackoverflow.com/questions/32464170/visual-studio-code-css-error-do-not-use-empty-rulesets
+ */
+/* .menu a:link {
 
 }
 
@@ -76,25 +80,37 @@ html {
 
 .menu a:focus {
 
-}
+} */
 
 .menu a:hover {
   color: white;
 }
 
-.menu a:active {
+/* .menu a:active {
 
+} */
+
+.menu-main {
+  align-items: center;
 }
 
-.login {
+.menu-items a:nth-child(6) {
+  color: linear-gradient(15deg ,#ffb291,#da7bf6);
+}
+
+.menu-items a:nth-child(6)::after {
+  content: "✨";
+}
+
+.menu-actions {
   justify-content: center;
   align-items: center;
 }
 
-a.signup {
-  font-weight: 500;
-  color: white;
+.menu-actions > a.signup {
   padding: 1.5rem 3rem;
   border-radius: 3rem;
+  font-weight: 500;
+  color: white;
   background-image: linear-gradient(181.81deg,#6333ff 25%,#441ebf 75%);
 }
