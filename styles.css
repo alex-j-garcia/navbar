@@ -1,0 +1,100 @@
+/* || GENERAL STYLES */
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+/* || UTILITIES */
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.debugging {
+  border: 1px solid red;
+}
+
+/* || TYPOGRAPHY */
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/* || SITEWIDE */
+
+.navbar {
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 1350px;
+  margin: 0px auto;
+  justify-content: space-between;
+}
+
+.mainNavigation {
+  align-items: center;
+}
+
+.menu-item a:nth-child(6) {
+  color: linear-gradient(15deg ,#ffb291,#da7bf6);
+}
+
+.menu-item a:nth-child(6)::after {
+  content: "✨";
+}
+
+.navbar a {
+  font-size: 1.5rem;
+  color: hsla(210, 17%, 55%, 1);
+  text-decoration: none;
+  margin: 0 2rem;
+}
+
+.navbar a:link {
+
+}
+
+.navbar a:visited {
+
+}
+
+.navbar a:focus {
+
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+.navbar a:active {
+
+}
+
+.login {
+  justify-content: center;
+  align-items: center;
+}
+
+a.signup {
+  font-weight: 500;
+  color: white;
+  padding: 1.5rem 3rem;
+  border-radius: 3rem;
+  background-image: linear-gradient(181.81deg,#6333ff 25%,#441ebf 75%);
+}
