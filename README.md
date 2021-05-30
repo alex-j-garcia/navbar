@@ -1,4 +1,4 @@
-# Navbar
+# navbar
 A simple non-responsive navbar, styled with CSS. Based on the main navigation found on the [OpenSource homepage](https://www.openphone.co/).
 
 **Source**
